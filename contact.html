@@ -53,7 +53,7 @@
 
         .office-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 40px;
         }
 
@@ -63,11 +63,13 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             border-top: 6px solid var(--primary-blue);
+            display: flex;
+            flex-direction: column;
         }
 
         .map-container {
             width: 100%;
-            height: 250px;
+            height: 300px;
             background: #eee;
         }
 
@@ -79,32 +81,29 @@
 
         .content-padding {
             padding: 30px;
+            flex-grow: 1;
         }
 
         .office-card h2 {
             color: var(--primary-blue);
             margin-top: 0;
             font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
         }
 
         .address-text {
             margin-bottom: 20px;
             min-height: 80px;
-        }
-
-        .contact-details {
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+            font-style: normal;
         }
 
         .contact-person {
-            background-color: #fcf8e3; /* Soft gold tint */
+            background-color: #fffdf2;
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
+            border: 1px solid #ffeeba;
             border-left: 4px solid var(--accent-gold);
         }
 
@@ -121,13 +120,12 @@
         }
 
         a:hover {
-            color: var(--accent-gold);
+            color: #d4af37;
             text-decoration: underline;
         }
 
         @media (max-width: 600px) {
             .office-grid { grid-template-columns: 1fr; }
-            .office-card { margin-bottom: 20px; }
         }
     </style>
 </head>
@@ -142,24 +140,30 @@
         <!-- UAE Office -->
         <div class="office-card">
             <div class="map-container">
-                <!-- Embed for Al Abbas Building 2, Bur Dubai -->
-                <iframe src="https://google.com" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Direct Embed Link for Al Abbas Building 2 -->
+                <iframe 
+                    src="https://google.com" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
             <div class="content-padding">
-                <h2>Office UAE</h2>
+                <h2>UAE Office</h2>
                 <div class="address-text">
-                    Office No. 37, 6th Floor, Al Abbas Building 2,<br>
-                    Al Mankhool, Bur Dubai, Dubai, UAE
+                    Office No. 37, 6th Floor,<br>
+                    Al Abbas Building 2, Al Mankhool,<br>
+                    Bur Dubai, Dubai, UAE
                 </div>
-                <div class="contact-details">
+                <div>
                     <strong>Tel:</strong> <a href="tel:+97143599916">+971 4 359 9916</a><br>
                     <strong>Email:</strong> <a href="mailto:info@amal.ae">info@amal.ae</a>
-                    
-                    <div class="contact-person">
-                        <strong>Sameer Palav</strong>
-                        Mob: <a href="tel:+971504740925">+971 50 474 0925</a><br>
-                        Email: <a href="mailto:sameer@amal.ae">sameer@amal.ae</a>
-                    </div>
+                </div>
+                
+                <div class="contact-person">
+                    <strong>Sameer Palav</strong>
+                    Mob: <a href="tel:+971504740925">+971 50 474 0925</a><br>
+                    Email: <a href="mailto:sameer@amal.ae">sameer@amal.ae</a>
                 </div>
             </div>
         </div>
@@ -167,22 +171,26 @@
         <!-- India Office -->
         <div class="office-card">
             <div class="map-container">
-                <!-- Embed for Gupte Road, Dombivli West -->
-                <iframe src="https://google.com" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Direct Embed Link for Gupte Road, Dombivli -->
+                <iframe 
+                    src="https://google.com" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
             <div class="content-padding">
-                <h2>Office India</h2>
+                <h2>India Office</h2>
                 <div class="address-text">
-                    15, 3rd Floor, Maitreyee, Gupte Road,<br>
-                    Vishnunagar, Dombivli West,<br>
-                    Maharashtra, India
+                    15, 3rd Floor, Maitreyee,<br>
+                    Gupte Road, Vishnunagar,<br>
+                    Dombivli West, Maharashtra, India
                 </div>
-                <div class="contact-details">
-                    <div class="contact-person">
-                        <strong>Hemant Dumbre</strong>
-                        Mob: <a href="tel:+919930835845">+91 99308 35845</a><br>
-                        Email: <a href="mailto:hemant@amal.ae">hemant@amal.ae</a>
-                    </div>
+                
+                <div class="contact-person">
+                    <strong>Hemant Dumbre</strong>
+                    Mob: <a href="tel:+919930835845">+91 99308 35845</a><br>
+                    Email: <a href="mailto:hemant@amal.ae">hemant@amal.ae</a>
                 </div>
             </div>
         </div>
