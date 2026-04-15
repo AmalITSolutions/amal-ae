@@ -1,92 +1,145 @@
-<!-- ===================== contact.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 🔐 SECURITY HEADERS START -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
 
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-Frame-Options" content="DENY">
-<!-- 🔐 SECURITY HEADERS END -->
+  <meta name="description" content="Contact Amal IT Solutions for Identity Management, Cybersecurity, IAM, PAM, Active Directory, and IT infrastructure services in UAE and India.">
+  <meta name="keywords" content="Amal IT Solutions contact, IAM Dubai, Cybersecurity UAE, Active Directory UAE, IT Solutions Dubai">
 
-<meta name="description" content="Amal IT Solutions provides Identity Management, Cybersecurity, IAM, PAM, and Active Directory solutions in UAE.">
-<meta name="keywords" content="IAM, PAM, Active Directory, Cybersecurity, Dubai IT Solutions">
-
-<title>Contact - Amal IT Solutions</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico">
-
+  <title>Contact - Amal IT Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <img src="logo.png" class="logo" alt="Amal IT Solutions Logo">
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
-      ☰
-    </button>
+  <header>
+    <div class="container nav">
+      <img src="logo.png" class="logo" alt="Amal IT Solutions Logo">
 
-   <nav id="site-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html" class="active">Contact</a>
-</nav>
-  </div>
-</header>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+        ☰
+      </button>
 
-<section class="content">
-<h1 style="text-align:center;">Our Offices</h1>
-<div class="contact-grid">
+      <nav id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="contact-card">
-<h2>Dubai Office</h2>
-<p><strong>Address</strong><br>
-Office 37, 6th Floor, Al Abbas Building 2,<br>
-Khaleed Bin Al Waleed Road, Bur Dubai, Dubai, UAE</p>
-<p><strong>Contact</strong><br>Sameer Palav</p>
-<p><strong>Phone</strong><br>+971 4 3599916</p>
-<p><strong>Mobile</strong><br>+971 50 3840267</p>
-<p><strong>Email</strong><br>info@amal.ae / sameer@amal.ae</p>
-</div>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>
+        Reach out to Amal IT Solutions to discuss your identity, cybersecurity,
+        infrastructure, and IT governance requirements.
+      </p>
+    </div>
+  </section>
 
-<div class="contact-card">
-<h2>India Office</h2>
-<p><strong>Address</strong><br>
-15, Maitreyee, Gupte Road, Vishnunagar,<br>
-Dombivli West, Thane, Maharashtra, India</p>
-<p><strong>Contact</strong><br>Hemant Dumbre</p>
-<p><strong>Mobile</strong><br>+91 99308 35845</p>
-<p><strong>Email</strong><br>hemant@amal.ae</p>
-</div>
+  <section class="content-section">
+    <div class="container">
+      <div class="content-card contact-intro">
+        <h2>Let’s Start the Conversation</h2>
+        <p>
+          Whether you need consultancy, implementation support, managed services,
+          or guidance on the right solution for your environment, our team is ready to help.
+        </p>
+      </div>
+    </div>
+  </section>
 
-</div>
-</section>
+  <section class="content-section alt-section">
+    <div class="container">
+      <div class="contact-grid">
 
-<footer>
-  <p>© 2026 Amal IT Solutions</p>
-</footer>
+        <div class="contact-card premium-contact-card">
+          <h2>Dubai Office</h2>
 
-<script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const siteNav = document.getElementById("site-nav");
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>
+              Office 37, 6th Floor, Al Abbas Building 2,<br>
+              Khaleed Bin Al Waleed Road, Bur Dubai, Dubai, UAE
+            </p>
+          </div>
 
-  if (menuToggle && siteNav) {
-    menuToggle.addEventListener("click", () => {
-      siteNav.classList.toggle("show");
-    });
+          <div class="contact-item">
+            <h3>Main Office</h3>
+            <p><a href="tel:+97143599916">+971 4 359 9916</a></p>
+            <p><a href="mailto:info@amal.ae">info@amal.ae</a></p>
+          </div>
 
-    document.addEventListener("click", (e) => {
-      if (!menuToggle.contains(e.target) && !siteNav.contains(e.target)) {
-        siteNav.classList.remove("show");
-      }
-    });
-  }
-</script>
+          <div class="contact-item">
+            <h3>Sameer Palav</h3>
+            <p><a href="tel:+971503840267">+971 50 384 0267</a></p>
+            <p><a href="mailto:sameer@amal.ae">sameer@amal.ae</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card premium-contact-card">
+          <h2>India Office</h2>
+
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>
+              15, Maitreyee, Gupte Road, Vishnunagar,<br>
+              Dombivli West, Thane, Maharashtra, India
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Hemant Dumbre</h3>
+            <p><a href="tel:+919930835845">+91 99308 35845</a></p>
+            <p><a href="mailto:hemant@amal.ae">hemant@amal.ae</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="content-card contact-cta">
+        <h2>Need the Right Solution?</h2>
+        <p>
+          Speak with Amal IT Solutions to discuss your requirements and identify
+          the most suitable approach for your business and IT environment.
+        </p>
+        <p><a href="mailto:info@amal.ae" class="btn-primary">Email Us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Amal IT Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const siteNav = document.getElementById("site-nav");
+
+    if (menuToggle && siteNav) {
+      menuToggle.addEventListener("click", () => {
+        siteNav.classList.toggle("show");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!menuToggle.contains(e.target) && !siteNav.contains(e.target)) {
+          siteNav.classList.remove("show");
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>

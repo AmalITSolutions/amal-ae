@@ -172,27 +172,64 @@ nav a.active {
   margin: 15px 0;
 }
 
-/* ===================== CONTACT ===================== */
+
+/* ===================== CONTACT PAGE ===================== */
+
+.contact-intro {
+  text-align: center;
+}
+
+.contact-intro h2 {
+  margin-bottom: 15px;
+}
+
+.premium-contact-card {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.contact-item {
+  margin-bottom: 24px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item h3 {
+  color: #4ea1ff;
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.contact-item p {
+  margin: 0 0 8px;
+  line-height: 1.7;
+}
+
+.contact-item a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #4ea1ff;
+}
+
+.contact-cta {
+  text-align: center;
+}
+
+.contact-cta p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);   /* 🔥 FORCE 2 columns */
   gap: 30px;
 }
-
-.contact-card {
-  background: #0f172a;
-  padding: 30px;
-  border-radius: 15px;
-}
-
-.contact-card h2 {
-  color: #6ea8fe;
-}
-
-.contact-card p {
-  color: #cbd5e1;
-}
-
 /* ===================== ABOUT PAGE ===================== */
 .page-hero {
   background: linear-gradient(135deg, #0b1220, #1e3a8a);
