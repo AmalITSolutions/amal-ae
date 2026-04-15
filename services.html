@@ -4,163 +4,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Security Headers -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
-
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-Frame-Options" content="DENY">
-
-<meta name="description" content="Amal IT Solutions provides Identity Management, Cybersecurity, IAM, PAM, and Active Directory solutions in UAE.">
-<meta name="keywords" content="IAM, PAM, Active Directory, Cybersecurity, Dubai IT Solutions">
 
 <title>Services - Amal IT Solutions</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon.ico">
-
-<style>
-/* Premium enhancements for Services page */
-.services-hero {
-  text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#0b1220,#1e3a8a);
-}
-.services-hero h1 {font-size:42px; margin-bottom:10px;}
-.services-hero p {color:#cbd5e1;}
-
-.services-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-  padding:40px;
-}
-
-.service-card {
-  background:#111a2e;
-  padding:30px;
-  border-radius:16px;
-  transition:all 0.3s ease;
-  position:relative;
-  overflow:hidden;
-}
-
-.service-card:hover {
-  transform:translateY(-8px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
-
-.service-icon {
-  width:60px;
-  height:60px;
-  margin-bottom:15px;
-}
-
-.service-card h2 {
-  color:#4ea1ff;
-  margin-bottom:10px;
-}
-
-.service-card p {
-  color:#cbd5e1;
-  line-height:1.6;
-  font-size:14px;
-}
-
-</style>
-
 </head>
-
 <body>
 
 <header>
   <div class="container nav">
     <img src="logo.png" class="logo" alt="Amal IT Solutions Logo">
-
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
-      ☰
-    </button>
-
-    <nav id="site-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="services.html" class="active">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section class="services-hero">
-  <h1>Our Services</h1>
-  <p>Comprehensive IT, Identity, and Cybersecurity Services for Modern Enterprises</p>
+<section class="page-hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>
+      Consulting, implementation, support, training, and managed service capabilities
+      designed to help organizations deploy, operate, and optimize secure IT environments.
+    </p>
+  </div>
 </section>
 
-<section class="services-grid">
-
-  <div class="service-card">
-    <img src="icons/consulting.png" class="service-icon">
-    <h2>Consultancy</h2>
-    <p>Comprehensive IT consultancy covering architecture, governance, compliance, automation, and enterprise monitoring to deliver cost-effective solutions.</p>
+<section class="content-section">
+  <div class="container">
+    <div class="content-card services-intro">
+      <h2>Professional Services Built Around Delivery and Support</h2>
+      <p>
+        Amal IT Solutions provides end-to-end services that help organizations plan, implement,
+        manage, and optimize identity, cybersecurity, and infrastructure solutions. Our engagement
+        model is practical, responsive, and aligned with business, operational, and compliance needs.
+      </p>
+    </div>
   </div>
+</section>
 
-  <div class="service-card">
-    <img src="icons/implementation.png" class="service-icon">
-    <h2>Implementation</h2>
-    <p>We provide end-to-end implementation of identity, cybersecurity, and IT governance solutions with seamless integration and best practices.</p>
+<section class="content-section alt-section">
+  <div class="container">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <img src="icons/implementation.png" alt="Implementation icon" class="service-icon">
+        <h3>Implementation</h3>
+        <p>We provide end-to-end implementation of identity, cybersecurity, and IT governance solutions with seamless integration and best-practice deployment.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/consulting.png" alt="Consultancy icon" class="service-icon">
+        <h3>Consultancy</h3>
+        <p>Comprehensive IT consultancy covering architecture, governance, compliance, automation, and enterprise monitoring to deliver practical and cost-effective solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/outsourcing.png" alt="Outsourcing icon" class="service-icon">
+        <h3>Outsourcing</h3>
+        <p>SLA-driven IT outsourcing services with 24/7 support, infrastructure management, and ITIL-aligned operations for enterprise and SMB environments.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/amc.png" alt="Annual Maintenance Contract icon" class="service-icon">
+        <h3>Annual Maintenance Contracts</h3>
+        <p>Cybersecurity-focused AMC services including monitoring, patching, upgrades, issue resolution, and optimization of implemented software solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/training.png" alt="Training icon" class="service-icon">
+        <h3>Training</h3>
+        <p>Hands-on technical training delivered by experienced consultants to help teams manage, configure, and fully utilize deployed solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/managed.png" alt="Managed Services icon" class="service-icon">
+        <h3>Managed Services</h3>
+        <p>End-to-end managed services including monitoring, administration, incident support, performance tuning, and ongoing service improvement.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="icons/license.png" alt="License and Renewals icon" class="service-icon">
+        <h3>License &amp; Renewals</h3>
+        <p>Flexible licensing and renewal support to help organizations maintain compliance, optimize cost, and ensure uninterrupted operations.</p>
+      </div>
+
+    </div>
   </div>
+</section>
 
-
-  <div class="service-card">
-    <img src="icons/outsourcing.png" class="service-icon">
-    <h2>Outsourcing</h2>
-    <p>SLA-driven IT outsourcing services with 24/7 support, infrastructure management, and ITIL-aligned operations.</p>
+<section class="content-section">
+  <div class="container">
+    <div class="content-card services-cta">
+      <h2>Need the Right Service Model?</h2>
+      <p>
+        Speak with Amal IT Solutions to identify the right combination of consulting, implementation,
+        support, and managed services for your environment.
+      </p>
+      <p><a href="contact.html" class="btn-primary">Talk to Us</a></p>
+    </div>
   </div>
-
-  <div class="service-card">
-    <img src="icons/amc.png" class="service-icon">
-    <h2>AMC</h2>
-    <p>Cybersecurity-focused AMC services including monitoring, patching, upgrades, and optimization of implemented security solutions.</p>
-  </div>
-
-  <div class="service-card">
-    <img src="icons/training.png" class="service-icon">
-    <h2>Training</h2>
-    <p>Hands-on training delivered by experienced consultants to ensure your team can effectively manage and utilize deployed solutions.</p>
-  </div>
-
-  <div class="service-card">
-    <img src="icons/managed.png" class="service-icon">
-    <h2>Managed Services</h2>
-    <p>End-to-end managed services including monitoring, administration, incident response, and continuous improvement.</p>
-  </div>
-
-  <div class="service-card">
-    <img src="icons/license.png" class="service-icon">
-    <h2>License & Renewals</h2>
-    <p>Optimize software licensing, ensure compliance, and maximize ROI with flexible licensing and renewal management.</p>
-  </div>
-
 </section>
 
 <footer>
-  <p>© 2026 Amal IT Solutions</p>
+  <p>© 2026 Amal IT Solutions. All rights reserved.</p>
 </footer>
-
-<script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const siteNav = document.getElementById("site-nav");
-
-  if (menuToggle && siteNav) {
-    menuToggle.addEventListener("click", () => {
-      siteNav.classList.toggle("show");
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!menuToggle.contains(e.target) && !siteNav.contains(e.target)) {
-        siteNav.classList.remove("show");
-      }
-    });
-  }
-</script>
 
 </body>
 </html>

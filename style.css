@@ -430,3 +430,70 @@ footer {
     background: rgba(78, 161, 255, 0.08);
   }
 }
+
+
+/* ===================== SERVICES PAGE ===================== */
+
+.services-intro {
+  text-align: center;
+}
+
+.services-intro h2 {
+  margin-bottom: 15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #111a2e;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 0 10px rgba(78, 161, 255, 0.3));
+}
+
+.service-card h3 {
+  color: #4ea1ff;
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.service-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 15px;
+}
+
+.services-cta {
+  text-align: center;
+}
+
+.services-cta p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
