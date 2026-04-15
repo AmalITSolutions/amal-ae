@@ -1,144 +1,92 @@
+<!-- ===================== contact.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>:: Amal IT - Contact Us ::</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png">
-    
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-    <link href='http://googleapis.com' rel='stylesheet' type='text/css'>
-    <link href='http://googleapis.com' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/css">
-        /* Matching Index.html spread layout */
-        .navbar-default { 
-            background-color: #fff; 
-            border-color: #e7e7e7; 
-            padding: 10px 0;
-        }
-        
-        .navbar-collapse {
-            display: flex !important;
-            justify-content: space-between;
-            align-items: center;
-        }
+<!-- 🔐 SECURITY HEADERS START -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
 
-        .nav.navbar-nav {
-            float: none;
-            display: flex;
-            width: 100%;
-            justify-content: space-between; /* Spreads links across the bar like index.html */
-            margin: 0;
-        }
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<!-- 🔐 SECURITY HEADERS END -->
 
-        .navbar-nav > li > a {
-            padding: 15px 5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #333;
-        }
+<meta name="description" content="Amal IT Solutions provides Identity Management, Cybersecurity, IAM, PAM, and Active Directory solutions in UAE.">
+<meta name="keywords" content="IAM, PAM, Active Directory, Cybersecurity, Dubai IT Solutions">
 
-        /* Office & Form Styling */
-        .office-section { padding: 60px 0; background: #fff; }
-        .office-header { color: #003366; text-transform: uppercase; margin-bottom: 30px; border-bottom: 2px solid #FFCC00; display: inline-block; }
-        .office-box { background: #f9f9f9; padding: 20px; border-radius: 5px; border-top: 4px solid #003366; margin-bottom: 30px; min-height: 320px; }
-        .contact-person-box { background: #fff; padding: 10px; border: 1px solid #ddd; margin-top: 15px; }
-        
-        #contact-form input, #contact-form textarea { width: 100%; margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; }
-        .submit-btn { background: #003366; color: #fff; border: none; padding: 10px 30px; text-transform: uppercase; cursor: pointer; }
-    </style>
+<title>Contact - Amal IT Solutions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+
 </head>
-
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <div class="col-md-8 top-info">
-                    <i class="fa fa-envelope"></i>
-                    <span class="top-bar-text">info@amal.ae / amalit@amalit.ae</span>
-                    <i class="fa fa-mobile fa-lg"></i>
-                    <span class="top-bar-text">+971 4 359 9916</span>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Amal IT" /></a>
-            </div>
-            
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="partners.html">Partners and Vendors</a></li>
-                    <li><a href="contact.html" style="color: #FFCC00;">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header>
+  <div class="container nav">
+    <img src="logo.png" class="logo" alt="Amal IT Solutions Logo">
 
-    <section class="office-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12"><h2 class="office-header">Our Offices</h2></div>
-            </div>
-            
-            <div class="row">
-                <!-- UAE Office -->
-                <div class="col-md-4">
-                    <div class="office-box">
-                        <h3 style="color:#003366;">UAE Office</h3>
-                        <p>Office No. 37, 6th Floor, Al Abbas Building 2,<br>
-                        Al Mankhool, Bur Dubai, Dubai, UAE</p>
-                        <p><strong>Tel:</strong> +971 4 359 9916<br>
-                        <strong>Email:</strong> info@amal.ae</p>
-                        
-                        <div class="contact-person-box">
-                            <strong style="color:#003366;">Sameer Palav</strong>
-                            Mob: +971 50 474 0925<br>
-                            Email: sameer@amal.ae
-                        </div>
-                    </div>
-                </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+      ☰
+    </button>
 
-                <!-- India Office -->
-                <div class="col-md-4">
-                    <div class="office-box">
-                        <h3 style="color:#003366;">India Office</h3>
-                        <p>15, 3rd floor, Maitreyee, Gupte Road,<br>
-                        Vishnunagar, Dombivli West, Maharashtra, India</p>
-                        
-                        <div class="contact-person-box">
-                            <strong style="color:#003366;">Hemant Dumbre</strong>
-                            Mob: +91 99308 35845<br>
-                            Email: hemant@amal.ae
-                        </div>
-                    </div>
-                </div>
+   <nav id="site-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
+  </div>
+</header>
 
-                <!-- Contact Form -->
-                <div class="col-md-4">
-                    <h3 style="color:#003366;">Get In Touch</h3>
-                    <form id="contact-form">
-                        <input type="text" id="contact_name" placeholder="Your Name" required />
-                        <input type="email" id="contact_email" placeholder="Your Email" required />
-                        <textarea id="contact_message" rows="5" placeholder="Your Message" required></textarea>
-                        <button type="button" class="submit-btn" onclick="ajax()">Send Message</button>
-                        <p id="p1" style="margin-top:10px;"></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="content">
+<h1 style="text-align:center;">Our Offices</h1>
+<div class="contact-grid">
+
+<div class="contact-card">
+<h2>Dubai Office</h2>
+<p><strong>Address</strong><br>
+Office 37, 6th Floor, Al Abbas Building 2,<br>
+Khaleed Bin Al Waleed Road, Bur Dubai, Dubai, UAE</p>
+<p><strong>Contact</strong><br>Sameer Palav</p>
+<p><strong>Phone</strong><br>+971 4 3599916</p>
+<p><strong>Mobile</strong><br>+971 50 3840267</p>
+<p><strong>Email</strong><br>info@amal.ae / sameer@amal.ae</p>
+</div>
+
+<div class="contact-card">
+<h2>India Office</h2>
+<p><strong>Address</strong><br>
+15, Maitreyee, Gupte Road, Vishnunagar,<br>
+Dombivli West, Thane, Maharashtra, India</p>
+<p><strong>Contact</strong><br>Hemant Dumbre</p>
+<p><strong>Mobile</strong><br>+91 99308 35845</p>
+<p><strong>Email</strong><br>hemant@amal.ae</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Amal IT Solutions</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const siteNav = document.getElementById("site-nav");
+
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!menuToggle.contains(e.target) && !siteNav.contains(e.target)) {
+        siteNav.classList.remove("show");
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
